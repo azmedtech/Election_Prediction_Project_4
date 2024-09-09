@@ -19,10 +19,10 @@ This project seeks to explore and analyze diverse datasets spanning from 2008 to
 
 BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS IDENTIFIED DURING EXPLORATORY DATA ANALYSIS. INCLUDE IMAGES OR GRAPHS AS APPROPRIATE AND DESCIBE INSIGHTS UNIQUE TO THE EVALUATION OF ONLY YOUR DATASET (NOT YET COMBINED).
 
-![Average Sentiment By Party](visualizations/all_years_avg_sent_by_cand.png)
+![Average Sentiment By Party](<Visualizations/all_years_avg_sent_by_cand.png>)
  Insights: The average sentiment expressed in the social media posts analyzed was not significantly different between political parties for any of the election cycles evaluated during this project. Of interest, there appears to be a significant downward shift in the sentiment expressed by each author for their respective candidate during the 2020 election, in which both parties were viewed substantially less favorably than in the previous election cycle, with the Republican candidate viewed negatively overall. For reference, the sentiment scale ranges from -1.0 (completely negative) to 1.0 (completely positive). 
 
-![2016 Sentiments By Party](visualizations/pos_neg_neut_by_party_2016.png) ![2020 Sentiments By Party](visualizations/pos_neg_neut_by_party_2020.png) ![2024 Sentiments By Party](visualizations/pos_neg_neut_by_party_2024.png)
+![2016 Sentiments By Party](<Visualizations/pos_neg_neut_by_party_2016.png>) ![2020 Sentiments By Party](<Visualizations/pos_neg_neut_by_party_2020.png>) ![2024 Sentiments By Party](<Visualizations/pos_neg_neut_by_party_2024.png>)
 Insights: Overall, across all years, the majority of authors posting on social media conveyed neutral sentiments about the presidential candidates. When comparing the positive and negative sentiments, the 2016 and 2024 data show positive sentiments around double the negative sentiments for the author's respective candidate, while the 2020 data shows the positive and negative sentiments to be nearly equal, explaining the average scores much closer to zero than in 2016 or 2024. 
 
 Data Limitations: The datasets between 2016, 2020, and 2024 vary widely in the number of entries, which may have a bias effect on the data interpretations. Additionally, in 2023, the owner of Twitter (now X) changed the API access for the app, which lead to a shift away from the use of the API as a data source. This may also affect the quantity and type of available data for analysis.
