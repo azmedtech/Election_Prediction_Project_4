@@ -1,6 +1,8 @@
 # Predicting the 2024 Presidential Election Outcome 
 Jessica Bourbon, Syed Shahid, Stephanie Souza, and Elisabeth Trujillo
 
+![Election Blurb](<Visualizations/wordcloud.pngpng>)
+
 # Introduction
 
 Welcome to the Predicting the 2024 Presidential Election Outcome project! This ambitious endeavor combines a wealth of data sources to forecast one of the most significant political events of our time. By harnessing the power of historical demographics, economic indicators, and social media trends, we aim to develop a robust machine learning model that predicts the outcome of the 2024 U.S. presidential election. Our approach integrates data from the U.S. Census, the Bureau of Economic Analysis, and Twitter (X) to build a predictive model that captures the multifaceted nature of electoral dynamics.
@@ -22,7 +24,7 @@ BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS I
 ![Average Sentiment By Party](<Visualizations/all_years_avg_sent_by_cand.png>)
  Insights: The average sentiment expressed in the social media posts analyzed was not significantly different between political parties for any of the election cycles evaluated during this project. Of interest, there appears to be a significant downward shift in the sentiment expressed by each author for their respective candidate during the 2020 election, in which both parties were viewed substantially less favorably than in the previous election cycle, with the Republican candidate viewed negatively overall. For reference, the sentiment scale ranges from -1.0 (completely negative) to 1.0 (completely positive). 
 
-![2016 Sentiments By Party](<Visualizations/pos_neg_neut_by_party_2016.png>) ![2020 Sentiments By Party](<Visualizations/pos_neg_neut_by_party_2020.png>) ![2024 Sentiments By Party](<Visualizations/pos_neg_neut_by_party_2024.png>)
+![Democratic Sentiments By Year](<Visualizations/Democratic_Sentiment_By_Year.png>) ![Republican Sentiments By Year](<Visualizations/Republican_Sentiment_By_Year.png>)
 Insights: Overall, across all years, the majority of authors posting on social media conveyed neutral sentiments about the presidential candidates. When comparing the positive and negative sentiments, the 2016 and 2024 data show positive sentiments around double the negative sentiments for the author's respective candidate, while the 2020 data shows the positive and negative sentiments to be nearly equal, explaining the average scores much closer to zero than in 2016 or 2024. 
 
 Data Limitations: The datasets between 2016, 2020, and 2024 vary widely in the number of entries, which may have a bias effect on the data interpretations. Additionally, in 2023, the owner of Twitter (now X) changed the API access for the app, which lead to a shift away from the use of the API as a data source. This may also affect the quantity and type of available data for analysis.
@@ -49,14 +51,6 @@ BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS I
 - **Filter Options**: Users can filter by election year, political party, or any of the input features factored into the election prediction.
 - **Dynamic Updates**: The dashboard updates in real-time based on the user's selections, ensuring relevant results are displayed.
 - **Detailed Park Information**: Each park marker provides detailed information, including park name, website link, fees, and seasonal temperatures.
-
-### How It Works:
-
-1. **Data Loading**: The app fetches data from MongoDB, including park details, amenities, activities, and weather information.
-2. **Map Creation**: Using `folium`, the app creates an interactive map with markers for each park.
-3. **User Interaction**: Users select desired amenities, activities, and season on the frontend.
-4. **Filtering**: The backend processes these selections, queries the MongoDB database, and filters the parks accordingly.
-5. **Map Update**: The filtered results are sent back to the frontend, and the map is updated dynamically to display the relevant parks.
 
 ### Installation Instructions:
 
