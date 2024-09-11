@@ -1,4 +1,4 @@
-state,Population,Age Group,Gender,Year
+state,Population_Value,Age Group,Gender,Year
  Alabama,47,18+,M,2008
  New Jersey,6,65-74,,2008
  New Mexico,7,65-74,,2008
@@ -177,17 +177,7 @@ state,Population,Age Group,Gender,Year
  West Virginia,40,,,2008
  Wisconsin,38,,,2008
  Wyoming,36,,,2008
- Alabama,2008,,,2008
- Alaska,2008,,,2008
- Arizona,2008,,,2008
- Arkansas,2008,,,2008
- California,2008,,,2008
- Colorado,2008,,,2008
- Connecticut,2008,,,2008
- Delaware,2008,,,2008
- District of Columbia,2008,,,2008
  Tennessee,37,,,2008
- Florida,2008,,,2008
  South Dakota,37,,,2008
  Rhode Island,38,,,2008
  Minnesota,37,,,2008
@@ -208,49 +198,7 @@ state,Population,Age Group,Gender,Year
  Pennsylvania,39,,,2008
  Puerto Rico,35,,,2008
  South Carolina,37,,,2008
- Georgia,2008,,,2008
- Hawaii,2008,,,2008
- Idaho,2008,,,2008
- Ohio,2008,,,2008
- Oklahoma,2008,,,2008
- Oregon,2008,,,2008
- Pennsylvania,2008,,,2008
- Puerto Rico,2008,,,2008
- Rhode Island,2008,,,2008
- South Carolina,2008,,,2008
- South Dakota,2008,,,2008
- Tennessee,2008,,,2008
- Texas,2008,,,2008
- Utah,2008,,,2008
- Vermont,2008,,,2008
- Virginia,2008,,,2008
- Washington,2008,,,2008
- West Virginia,2008,,,2008
- Wisconsin,2008,,,2008
- Wyoming,2008,,,2008
- North Dakota,2008,,,2008
- North Carolina,2008,,,2008
- New York,2008,,,2008
- New Mexico,2008,,,2008
- Illinois,2008,,,2008
- Indiana,2008,,,2008
- Iowa,2008,,,2008
- Kansas,2008,,,2008
- Kentucky,2008,,,2008
- Louisiana,2008,,,2008
- Maine,2008,,,2008
- Maryland,2008,,,2008
  Michigan,38,,,2008
- Massachusetts,2008,,,2008
- Minnesota,2008,,,2008
- Mississippi,2008,,,2008
- Missouri,2008,,,2008
- Montana,2008,,,2008
- Nebraska,2008,,,2008
- Nevada,2008,,,2008
- New Hampshire,2008,,,2008
- New Jersey,2008,,,2008
- Michigan,2008,,,2008
  Nebraska,6,55-59,,2008
  Massachusetts,38,,,2008
  Maine,41,,,2008
@@ -842,7 +790,6 @@ state,Population,Age Group,Gender,Year
  Ohio,6,60-64,,2012
  Nebraska,5,60-64,,2012
  Puerto Rico,4,75-84,,2012
- Wyoming,2012,,,2012
  South Carolina,4,75-84,,2012
  Texas,33,,,2012
  Utah,29,,,2012
@@ -852,17 +799,7 @@ state,Population,Age Group,Gender,Year
  West Virginia,41,,,2012
  Wisconsin,38,,,2012
  Wyoming,36,,,2012
- Alabama,2012,,,2012
- Alaska,2012,,,2012
- Arizona,2012,,,2012
- Arkansas,2012,,,2012
- California,2012,,,2012
- Colorado,2012,,,2012
- Connecticut,2012,,,2012
- Delaware,2012,,,2012
- District of Columbia,2012,,,2012
  Tennessee,38,,,2012
- Florida,2012,,,2012
  South Dakota,36,,,2012
  Rhode Island,39,,,2012
  Minnesota,37,,,2012
@@ -883,49 +820,8 @@ state,Population,Age Group,Gender,Year
  Pennsylvania,40,,,2012
  Puerto Rico,37,,,2012
  South Carolina,38,,,2012
- Georgia,2012,,,2012
- Hawaii,2012,,,2012
- Idaho,2012,,,2012
- Ohio,2012,,,2012
- Oklahoma,2012,,,2012
- Oregon,2012,,,2012
- Pennsylvania,2012,,,2012
- Puerto Rico,2012,,,2012
- Rhode Island,2012,,,2012
- South Carolina,2012,,,2012
- South Dakota,2012,,,2012
- Tennessee,2012,,,2012
- Texas,2012,,,2012
- Utah,2012,,,2012
- Vermont,2012,,,2012
- Virginia,2012,,,2012
- Washington,2012,,,2012
- West Virginia,2012,,,2012
- Wisconsin,2012,,,2012
  Nebraska,6,55-59,,2012
- North Dakota,2012,,,2012
- North Carolina,2012,,,2012
- New York,2012,,,2012
- New Mexico,2012,,,2012
- Illinois,2012,,,2012
- Indiana,2012,,,2012
- Iowa,2012,,,2012
- Kansas,2012,,,2012
- Kentucky,2012,,,2012
- Louisiana,2012,,,2012
- Maine,2012,,,2012
- Maryland,2012,,,2012
  Michigan,39,,,2012
- Massachusetts,2012,,,2012
- Minnesota,2012,,,2012
- Mississippi,2012,,,2012
- Missouri,2012,,,2012
- Montana,2012,,,2012
- Nebraska,2012,,,2012
- Nevada,2012,,,2012
- New Hampshire,2012,,,2012
- New Jersey,2012,,,2012
- Michigan,2012,,,2012
  Rhode Island,4,75-84,,2012
  Massachusetts,39,,,2012
  Maine,43,,,2012
@@ -1517,7 +1413,6 @@ state,Population,Age Group,Gender,Year
  Oklahoma,5,60-64,,2016
  Nevada,5,60-64,,2016
  Puerto Rico,6,75-84,,2016
- Wyoming,2016,,,2016
  South Carolina,4,75-84,,2016
  Texas,34,,,2016
  Utah,30,,,2016
@@ -1527,17 +1422,7 @@ state,Population,Age Group,Gender,Year
  West Virginia,42,,,2016
  Wisconsin,39,,,2016
  Wyoming,37,,,2016
- Alabama,2016,,,2016
- Alaska,2016,,,2016
- Arizona,2016,,,2016
- Arkansas,2016,,,2016
- California,2016,,,2016
- Colorado,2016,,,2016
- Connecticut,2016,,,2016
- Delaware,2016,,,2016
- District of Columbia,2016,,,2016
  Tennessee,38,,,2016
- Florida,2016,,,2016
  South Dakota,36,,,2016
  Rhode Island,40,,,2016
  Minnesota,38,,,2016
@@ -1558,49 +1443,8 @@ state,Population,Age Group,Gender,Year
  Pennsylvania,40,,,2016
  Puerto Rico,40,,,2016
  South Carolina,39,,,2016
- Georgia,2016,,,2016
- Hawaii,2016,,,2016
- Idaho,2016,,,2016
- Ohio,2016,,,2016
- Oklahoma,2016,,,2016
- Oregon,2016,,,2016
- Pennsylvania,2016,,,2016
- Puerto Rico,2016,,,2016
- Rhode Island,2016,,,2016
- South Carolina,2016,,,2016
- South Dakota,2016,,,2016
- Tennessee,2016,,,2016
- Texas,2016,,,2016
- Utah,2016,,,2016
- Vermont,2016,,,2016
- Virginia,2016,,,2016
- Washington,2016,,,2016
- West Virginia,2016,,,2016
- Wisconsin,2016,,,2016
  Nebraska,6,55-59,,2016
- North Dakota,2016,,,2016
- North Carolina,2016,,,2016
- New York,2016,,,2016
- New Mexico,2016,,,2016
- Illinois,2016,,,2016
- Indiana,2016,,,2016
- Iowa,2016,,,2016
- Kansas,2016,,,2016
- Kentucky,2016,,,2016
- Louisiana,2016,,,2016
- Maine,2016,,,2016
- Maryland,2016,,,2016
  Michigan,39,,,2016
- Massachusetts,2016,,,2016
- Minnesota,2016,,,2016
- Mississippi,2016,,,2016
- Missouri,2016,,,2016
- Montana,2016,,,2016
- Nebraska,2016,,,2016
- Nevada,2016,,,2016
- New Hampshire,2016,,,2016
- New Jersey,2016,,,2016
- Michigan,2016,,,2016
  Rhode Island,4,75-84,,2016
  Massachusetts,39,,,2016
  Maine,44,,,2016
@@ -2032,18 +1876,7 @@ state,Population,Age Group,Gender,Year
  West Virginia,42,,,2020
  Wisconsin,40,,,2020
  Wyoming,38,,,2020
- Alabama,2020,,,2020
- Alaska,2020,,,2020
- Arizona,2020,,,2020
- Arkansas,2020,,,2020
- California,2020,,,2020
- Colorado,2020,,,2020
- Connecticut,2020,,,2020
- Delaware,2020,,,2020
- District of Columbia,2020,,,2020
- Florida,2020,,,2020
  Texas,35,,,2020
- Georgia,2020,,,2020
  Tennessee,39,,,2020
  South Carolina,40,,,2020
  Mississippi,39,,,2020
@@ -2064,48 +1897,7 @@ state,Population,Age Group,Gender,Year
  Puerto Rico,45,,,2020
  Rhode Island,40,,,2020
  South Dakota,37,,,2020
- Hawaii,2020,,,2020
- Idaho,2020,,,2020
- Illinois,2020,,,2020
- Oklahoma,2020,,,2020
- Oregon,2020,,,2020
- Pennsylvania,2020,,,2020
- Puerto Rico,2020,,,2020
- Rhode Island,2020,,,2020
- South Carolina,2020,,,2020
- South Dakota,2020,,,2020
- Tennessee,2020,,,2020
- Texas,2020,,,2020
- Utah,2020,,,2020
- Vermont,2020,,,2020
- Virginia,2020,,,2020
- Washington,2020,,,2020
- West Virginia,2020,,,2020
- Wisconsin,2020,,,2020
- Wyoming,2020,,,2020
- Ohio,2020,,,2020
- North Dakota,2020,,,2020
- North Carolina,2020,,,2020
- New York,2020,,,2020
- Indiana,2020,,,2020
- Iowa,2020,,,2020
- Kansas,2020,,,2020
- Kentucky,2020,,,2020
- Louisiana,2020,,,2020
- Maine,2020,,,2020
- Maryland,2020,,,2020
- Massachusetts,2020,,,2020
  Minnesota,38,,,2020
- Michigan,2020,,,2020
- Mississippi,2020,,,2020
- Missouri,2020,,,2020
- Montana,2020,,,2020
- Nebraska,2020,,,2020
- Nevada,2020,,,2020
- New Hampshire,2020,,,2020
- New Jersey,2020,,,2020
- New Mexico,2020,,,2020
- Minnesota,2020,,,2020
  Michigan,40,,,2020
  Maryland,38,,,2020
  Arizona,39,,,2020
@@ -2307,15 +2099,7 @@ state,Population,Age Group,Gender,Year
  West Virginia,42,,,2022
  Wisconsin,40,,,2022
  Wyoming,39,,,2022
- Alabama,2022,,,2022
- Alaska,2022,,,2022
- Arizona,2022,,,2022
- Arkansas,2022,,,2022
- California,2022,,,2022
- Colorado,2022,,,2022
- Connecticut,2022,,,2022
  South Carolina,40,,,2022
- Delaware,2022,,,2022
  Rhode Island,40,,,2022
  Pennsylvania,41,,,2022
  Massachusetts,40,,,2022
@@ -2336,49 +2120,8 @@ state,Population,Age Group,Gender,Year
  Oklahoma,37,,,2022
  Oregon,40,,,2022
  Puerto Rico,44,,,2022
- District of Columbia,2022,,,2022
- Florida,2022,,,2022
- Georgia,2022,,,2022
- North Carolina,2022,,,2022
- North Dakota,2022,,,2022
- Ohio,2022,,,2022
- Oklahoma,2022,,,2022
- Oregon,2022,,,2022
- Pennsylvania,2022,,,2022
- Puerto Rico,2022,,,2022
- Rhode Island,2022,,,2022
- South Carolina,2022,,,2022
- South Dakota,2022,,,2022
- Tennessee,2022,,,2022
- Texas,2022,,,2022
- Utah,2022,,,2022
- Vermont,2022,,,2022
- Virginia,2022,,,2022
- Washington,2022,,,2022
  Montana,5,55-59,,2022
- New York,2022,,,2022
- New Mexico,2022,,,2022
- New Jersey,2022,,,2022
- New Hampshire,2022,,,2022
- Hawaii,2022,,,2022
- Idaho,2022,,,2022
- Illinois,2022,,,2022
- Indiana,2022,,,2022
- Iowa,2022,,,2022
- Kansas,2022,,,2022
- Kentucky,2022,,,2022
- Louisiana,2022,,,2022
  Maryland,39,,,2022
- Maine,2022,,,2022
- Massachusetts,2022,,,2022
- Michigan,2022,,,2022
- Minnesota,2022,,,2022
- Mississippi,2022,,,2022
- Missouri,2022,,,2022
- Montana,2022,,,2022
- Nebraska,2022,,,2022
- Nevada,2022,,,2022
- Maryland,2022,,,2022
  Pennsylvania,5,75-84,,2022
  Maine,45,,,2022
  Kentucky,39,,,2022
@@ -2439,7 +2182,6 @@ state,Population,Age Group,Gender,Year
  Illinois,39,,,2022
  Indiana,38,,,2022
  Iowa,38,,,2022
- West Virginia,2022,,,2022
  Wyoming,1,,,2022
  Wisconsin,2,,,2022
  West Virginia,2,,,2022
@@ -2571,7 +2313,6 @@ state,Population,Age Group,Gender,Year
  Oregon,49,18+,M,2022
  Louisiana,48,18+,M,2022
  Kansas,49,18+,M,2022
- Wisconsin,2022,,,2022
  Alabama,47,18+,M,2022
  Alaska,53,18+,M,2022
  Arizona,49,18+,M,2022
@@ -2802,4 +2543,3 @@ state,Population,Age Group,Gender,Year
  Maine,12,35-44,,2022
  Maryland,13,35-44,,2022
  Idaho,13,35-44,,2022
- Wyoming,2022,,,2022
