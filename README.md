@@ -32,6 +32,18 @@ Data Limitations: The datasets between 2016, 2020, and 2024 vary widely in the n
 ## Demographic Analysis 
 
 BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS IDENTIFIED DURING EXPLORATORY DATA ANALYSIS. INCLUDE IMAGES OR GRAPHS AS APPROPRIATE AND DESCIBE INSIGHTS UNIQUE TO THE EVALUATION OF ONLY YOUR DATASET (NOT YET COMBINED).
+![2008heat_map_race](https://github.com/user-attachments/assets/cadd418c-d1d1-4bcd-9a7d-49c0653e7c69)
+
+![2022heat_map_race](https://github.com/user-attachments/assets/510cacc7-3aed-469e-82b6-f82558eaefad)
+Heat maps of the racial distribution with US states over the election years. 
+
+Insight: 
+
+Over the last few election years, the median age is consistently around 30-40 years old. There isn't much change in those values over time. Most of the age percentages taper at either end of the spectrum of ages. Based on the race data, the largest percentage identifies as "white." However, the percentages have slowly been changing to reflect the growing diversity in our country. Although, the change is not drastic, by any means, the percentage of people who identify as "white" has decreased gradually over the years. The next highest percentages were in those who identify as "african-american/black" or "hispanic/latino(any race). I didn't pull the further breakdown within the different races, because it would have made the dataset too large, so I opted to focus on the Percentages of the Total Race data. 
+
+Data Limitations: 
+
+The biggest issue I had with US Census Data is that it is only officially pulled every ten years. I pulled most of my demographic data from the American Community Survey (ACS). It is a yearly done survey that does a brief snapshot of the census demographics creating estimations essentially. The main limitations are that the years 2023 and 2024 are not fully completed and released. It takes time for them to organize and release them. Therefore, I didn't have true demographic data past 2022 to use. Essentially, I created my datasets by pulling specific variables from the US Census ACS APIs. And built tailored datasets to match the demographics I wanted to look at. 
 
 ## Economic Analysis
 
