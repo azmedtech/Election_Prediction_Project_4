@@ -128,7 +128,7 @@ To use this project to predict the winning candidate locally, follow these steps
 
     **Sentiment Anlaysis**: From the Sentiment_Analysis folder, run the individual Sentiment_2016, Sentiment_2020, and Sentiment_2024 code files. Next, run the Combined_Data_2016_2020_2024 code file to obtain the final combined sentiment analysis dataset. Running these files will generate the required CSVs as well as the EDA visualizations. The WordCloud code file was used to generate the visual at the head of this ReadMe file. 
 
-    **Demographic Analysis**: ENTER INSTRUCTIONS HERE.
+    **Demographic Analysis**: From Census Data folder, run census_age2022.ipynb, then census_age2008_2020.ipynb to get the merged age csv file. For race demo in the same folder run, census_race2008_2020.ipynb then run census_race2022.ipynb to get merged csv. In the CensusVisuals run, Age_visual.ipynb and demo_visuals.ipynb to get visuals on data analysis. In the main Machine Learning Model folder run combining_csvfinal-Copy1.ipynb for the Decision Tree and Random Forest models and optimization. 
 
     **Economic Analysis**: ENTER INSTRUCTIONS HERE.
 
