@@ -7,7 +7,7 @@ Jessica Bourbon, Syed Shahid, Stephanie Souza, and Elisabeth Trujillo
 
 Welcome to the Predicting the 2024 Presidential Election Outcome project! This ambitious endeavor combines a wealth of data sources to forecast one of the most significant political events of our time. By harnessing the power of historical demographics, economic indicators, and social media trends, we aim to develop a robust machine learning model that predicts the outcome of the 2024 U.S. presidential election. Our approach integrates data from the U.S. Census, the Bureau of Economic Analysis, and Twitter (X) to build a predictive model that captures the multifaceted nature of electoral dynamics.
 
-Our final presentation can be found at "INSERT FILE PATH FROM REPO HERE" and our Tableau story can be found "INSERT TABLEAU PUBLIC LINK HERE".
+Our final presentation can be found at ![Average Sentiment By Party](https://github.com/azmedtech/Election_Prediction_Project_4/blob/main/Election_Prediction_Presentation.pptx) and our Tableau story can be found at [Election Tableau Story](https://public.tableau.com/views/PresidentialPrediction2024/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 # Project Overview
 
@@ -39,45 +39,59 @@ Heat maps of the racial distribution with US states over the election years.
 
 ![median_age_change_2008_2022](https://github.com/user-attachments/assets/89743aa9-0d8d-4f4e-b8f3-08994668dcd2)
 Line graph showimg changes in median age in the US states over election years. 
-Insight: 
+Insights: Over the last few election years, the median age is consistently around 30-40 years old. There isn't much change in those values over time, but it seems to be steadily rising. Most of the age percentages taper at either end of the spectrum of ages. Based on the race data, the largest percentage identifies as "white." However, the percentages have slowly been changing to reflect the growing diversity in our country. Although, the change is not drastic, by any means, the percentage of people who identify as "white" has decreased gradually over the years. The next highest percentages were in those who identify as "african-american/black" or "hispanic/latino(any race). I didn't pull the further breakdown within the different races, because it would have made the dataset too large, so I opted to focus on the Percentages of the Total Race data. 
 
-Over the last few election years, the median age is consistently around 30-40 years old. There isn't much change in those values over time, but it seems to be steadily rising. Most of the age percentages taper at either end of the spectrum of ages. Based on the race data, the largest percentage identifies as "white." However, the percentages have slowly been changing to reflect the growing diversity in our country. Although, the change is not drastic, by any means, the percentage of people who identify as "white" has decreased gradually over the years. The next highest percentages were in those who identify as "african-american/black" or "hispanic/latino(any race). I didn't pull the further breakdown within the different races, because it would have made the dataset too large, so I opted to focus on the Percentages of the Total Race data. 
+Data Limitations: The biggest issue with the US Census Data is that it is only officially pulled every ten years. The ajority of theavaialble demographic data was pulled from the American Community Survey (ACS). It is a yearly done survey that does a brief snapshot of the census demographics creating estimations essentially. The main limitations are that the years 2023 and 2024 are not fully completed and released. It takes time for them to organize and release them. Therefore, true demographic data past 2022 was unavailable for use. To create the datasets, specific variables from the US Census ACS APIs were pulled, and used to build tailored datasets to match the demographics of interest. 
 
-Data Limitations: 
+## Economic & Election Analysis
 
-The biggest issue I had with US Census Data is that it is only officially pulled every ten years. I pulled most of my demographic data from the American Community Survey (ACS). It is a yearly done survey that does a brief snapshot of the census demographics creating estimations essentially. The main limitations are that the years 2023 and 2024 are not fully completed and released. It takes time for them to organize and release them. Therefore, I didn't have true demographic data past 2022 to use. Essentially, I created my datasets by pulling specific variables from the US Census ACS APIs. And built tailored datasets to match the demographics I wanted to look at. 
+The datasets from Kaggle, the Census Bureau, and the Bureau of Economic Analysis were first loaded and preprocessed to ensure uniformity in their formats. During this stage, columns were standardized across all datasets, especially for state names, year formats, and numeric values like GDP and employment. Missing values were addressed either by filling them with averages or removing rows lacking crucial information. Once the data was cleaned, economic indicators such as GDP, personal income, and employment were merged with election results data, aligning them by state and year. Separate datasets covering racial demographics, age groups, and sentiment scores were also merged by state, year, and candidate.
 
-## Economic Analysis
+During the exploratory data analysis (EDA), a significant economic recovery was observed from 2008 to 2020, with GDP increasing steadily across most states following the 2008 financial crisis. Employment and personal income trends indicated that states with higher employment rates and rising personal incomes exhibited more voting stability, often supporting incumbents. In contrast, states with slower GDP growth or stagnant employment were more likely to shift political preferences, a trend particularly evident in the 2016 and 2020 elections.
 
-BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS IDENTIFIED DURING EXPLORATORY DATA ANALYSIS. INCLUDE IMAGES OR GRAPHS AS APPROPRIATE AND DESCIBE INSIGHTS UNIQUE TO THE EVALUATION OF ONLY YOUR DATASET (NOT YET COMBINED).
+![Total Votes by Party per State](<Economic Indicators/election_total_votes_bar_chart.png>)
+Insights: Analysis on economic indicators like GDP, personal income, and employment changed from 2008 to 2020. You can observe any economic growth or decline in specific states.
+
+![Economic Indicators Across Election Years](<Economic Indicators/economic_indicators_barplot_normalized.png>)
+Insights:  Analysis on states with higher GDP tend to vote in elections. We can check whether wealthier states lean towards certain candidates or political parties.
+
+Data Limitations: ENTER FINDINGS HERE
 
 # Technical Overview:
 
-1. **Language**: The backend is developed using Visual Studio Code Editor and Jupyter Notebooks in Python. Useful libraries utilized in the data processing phase of the project included pandas, nltk, matplotlib, and seaborn.
+1. **Language**: The backend is developed using Visual Studio Code Editor and Jupyter Notebooks in Python. Occasionally, due to environment limitations in environment or file sizem Google CoLab was used. Useful libraries utilized in the data processing phase of the project included pandas, nltk, matplotlib, and seaborn.
    
 2. **Database**: PostgreSQL is used to store the eelction data. The database contains tables and schema for individual sentiment analysis data, individual demographic data, and location-based economic data. This relational database allows for ease of use and straightforward joining of the tables, which is essential for preparing our final dataset to feed our machine learning model.
 
-3. **VisualizationS**: The Tableau public site is a useful way to present the story of the data and the insights derived from it. < CONTINUE TO DESCRIBE MORE AS FINALIZE VISUALIZATIONS>
+3. **Visualizations**: The Tableau public site is a useful way to present the story of the data and the insights derived from it. A comprehensive story line tying the different factors that may influence voting outcome into a cohesive presentation of the Exploratory Data Analysis. The WordCLoud library was used to generate an interesting visual comprised of the top social media statements for each political party candidate across the three election cycles available. 
+
+4. **Machine Learning Model**: Four different machine learning models were generated. These include Logistical Regression, TenserFlow, Rendom Forest, and Decision Tree. In each scenario the Target for the model was the Candidate (Political Party). Features evaluated included age, race, location, gross domestic product, individual income, availability of jobs, and social media snetiment.
 
 # Key Features:
 
 - **Interactive Dashboard**: Displays election information across multiple election cycles that users can click to view and compare detailed information.
 - **Filter Options**: Users can filter by election year, political party, or any of the input features factored into the election prediction.
 - **Dynamic Updates**: The dashboard updates in real-time based on the user's selections, ensuring relevant results are displayed.
-- **Detailed Park Information**: Each park marker provides detailed information, including park name, website link, fees, and seasonal temperatures.
+- **Predictive Power**: Each machine learning model provides predictive information that indicates the most probable 2024 winning candidate, based on historical precedent. 
 
 ### Installation Instructions:
 
-To run the National Parks Finder app locally, follow these steps:
+To use this project to predict the winning candidate locally, follow these steps:
 
 1. **Clone the repository**: Clone the project repository to your local machine.
 2. **Navigate to the project directory**: Open the integrated terminal in your code editor and navigate to the project directory.
-3. **Install dependencies**: Run the following command to install the required Python packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
-4. **Run the code**: DESCRIBE THE ORDER TO RUN THE VARIOUS CODE DOCUMENTS AND WHAT TO DO WITH THE OUTPUT FILES:
-5. **Access the visualizations**: INSTRUCTIONS TO ACCESS PAGE IN TABLEAU AND VIEW DASHBOARDS.
+3. **Install dependencies**: Ensure your local environment can accomodate pandas, numpy, matplotlib, tensorflow, wordcloud, and nltk. Alternatively, utilize Google CoLabs.
+4. **Run the code**
+
+    **Sentiment Anlaysis**: From the Sentiment_Analysis folder, run the individual Sentiment_2016, Sentiment_2020, and Sentiment_2024 code files. Next, run the Combined_Data_2016_2020_2024 code file to obtain the final combined sentiment analysis dataset. Running these files will generate the required CSVs as well as the EDA visualizations. The WordCloud code file was used to generate the visual at the head of this ReadMe file. 
+
+    **Demographic Analysis**: ENTER INSTRUCTIONS HERE.
+
+    **Economic Analysis**: ENTER INSTRUCTIONS HERE.
+
+    **Machine Learing Models**: ENTER INSTRUCTIONS HERE.
+
+5. **Access the visualizations**: INDICATE FILES USED TO GENERATE VISUALS.
 
 # Ethical Considerations
 
