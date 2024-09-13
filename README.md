@@ -56,7 +56,9 @@ Insights: Analysis on economic indicators like GDP, personal income, and employm
 ![Economic Indicators Across Election Years](<Economic Indicators/economic_indicators_barplot_normalized.png>)
 Insights:  Analysis on states with higher GDP tend to vote in elections. We can check whether wealthier states lean towards certain candidates or political parties.
 
-Data Limitations: ENTER FINDINGS HERE
+## Tableau Visuals link 
+https://rb.gy/uh9ie7
+### Data Limitations: ENTER FINDINGS HERE
 =======
 ## Economic & Election Analysis
 
@@ -100,7 +102,70 @@ To use this project to predict the winning candidate locally, follow these steps
 
     **Economic Analysis**: ENTER INSTRUCTIONS HERE.
 
-    **Machine Learing Models**: ENTER INSTRUCTIONS HERE.
+    **Machine Learing Models**:
+### Using Logistic Regression Model to Predict the Presidential Election 
+This model is a detailed performance summary of a binary classification model, showing key metrics like precision, recall, and F1-score for each class (e.g., Democrat and Republican) along with overall metrics like accuracy, macro average, and weighted average. 
+
+fig 1.
+![alt text](classification_report_heatmap.png)
+Metrics: 
+
+Precision:
+
+ Precision measures the accuracy of positive predictions. It is defined as the number of true positives divided by the number of true positives and false positives. In simpler terms, it indicates how many of the predicted positives on Republican are actually positives.
+
+Class 0 (Democrat): 
+
+Precision is 0.79, meaning that when the model predicts "Democrat," it is correct 79% of the time.
+Class 1 (Republican): Precision is 0.61, meaning that when the model predicts "Republican," it is correct 61% of the time.
+Recall: 
+
+Recall measures the ability of a model to find all the relevant cases (true positives). It is the number of true positives divided by the number of true positives and false negatives. It tells us how many of the actual positives (e.g., Republicans) were correctly identified.
+
+Class 0 (Democrat): 
+
+Recall is 0.04, indicating that the model only correctly identifies 4% of the actual "Democrat" cases. This very low recall suggests the model is missing a large number of actual "Democrat" cases.
+
+Class 1 (Republican): 
+
+Recall is 0.99, 
+
+meaning that the model correctly identifies 99% of the actual "Republican" cases. This is very high, indicating that the model captures almost all "Republican" cases.
+F1-Score: The F1-score is the harmonic mean of precision and recall, giving a balance between the two. It is especially useful when the class distribution is imbalanced. A high F1-score indicates a better balance between precision and recall.
+
+Class 0 (Democrat): 
+
+The F1-score is 0.49, which is very low. This is a result of the combination of high precision but extremely low recall.
+Class 1 (Republican): The F1-score is 0.97, indicating a good balance between precision and recall. The high recall boosts this score.
+
+Support: 
+
+This represents the number of actual occurrences of each class in the test set.
+
+Class 0 (Democrat): 5,381
+Class 1 (Republican): 232,292
+Accuracy:
+
+ Overall, the model's accuracy is 0.97 (97%), indicating that 97% of the predictions (both Democrat and Republican) are correct.
+
+Macro Average: 
+
+The macro average calculates the unweighted mean of precision, recall, and F1-score across all classes. It treats all classes equally, regardless of their support. The macro averages are:
+
+Precision: 0.49
+Recall: 0.50
+F1-Score: 0.49
+
+These numbers suggest that while the model performs decently on precision across classes, it struggles significantly with recall.
+
+The weighted average reflects the class imbalance and shows that the model's overall recall is affected significantly by the low recall for the "Democrat" class.
+
+### Interpretation
+Model Bias: The model seems heavily biased towards predicting the "Republican" class. This is evident from the extremely high recall (0.99) for class 1 (Republican) and very low recall (0.04) for class 0 (Democrat). It suggests that the model almost always predicts "Republican" when unsure.
+
+fig 2.
+![alt text](confusion_matrix.png)
+
 
 5. **Access the visualizations**: INDICATE FILES USED TO GENERATE VISUALS.
 
