@@ -47,7 +47,7 @@ Data Limitations: The biggest issue with the US Census Data is that it is only o
 
 The datasets from Kaggle, the Census Bureau, and the Bureau of Economic Analysis were first loaded and preprocessed to ensure uniformity in their formats. During this stage, columns were standardized across all datasets, especially for state names, year formats, and numeric values like GDP and employment. Missing values were addressed either by filling them with averages or removing rows lacking crucial information. Once the data was cleaned, economic indicators such as GDP, personal income, and employment were merged with election results data, aligning them by state and year. Separate datasets covering racial demographics, age groups, and sentiment scores were also merged by state, year, and candidate.
 
-<<<<<<< HEAD
+
 During the exploratory data analysis (EDA), a significant economic recovery was observed from 2008 to 2020, with GDP increasing steadily across most states following the 2008 financial crisis. Employment and personal income trends indicated that states with higher employment rates and rising personal incomes exhibited more voting stability, often supporting incumbents. In contrast, states with slower GDP growth or stagnant employment were more likely to shift political preferences, a trend particularly evident in the 2016 and 2020 elections.
 
 ![Total Votes by Party per State](<Economic Indicators/election_total_votes_bar_chart.png>)
