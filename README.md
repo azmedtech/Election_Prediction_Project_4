@@ -28,6 +28,36 @@ Three datasets were obtaiend from Kaggle.com (links below) and processed in Jupy
 Insights: Overall, across all years, the majority of authors posting on social media conveyed neutral sentiments about the presidential candidates. When comparing the positive and negative sentiments, the 2016 and 2024 data show positive sentiments around double the negative sentiments for the author's respective candidate, while the 2020 data shows the positive and negative sentiments to be nearly equal, explaining the average scores much closer to zero than in 2016 or 2024. 
 
 Data Limitations: The datasets between 2016, 2020, and 2024 vary widely in the number of entries, which may have a bias effect on the data interpretations. Additionally, in 2023, the owner of Twitter (now X) changed the API access for the app, which lead to a shift away from the use of the API as a data source. This may also affect the quantity and type of available data for analysis.
+## Logistic Regression Model
+![alt text](Sentiment_confusion_matrix.png) ![alt text](Sentiment_classification_report.png)
+The classification report shows outstanding performance, with perfect precision, recall, and F1-scores of 1.00 for both classes (0 and 1). Here's what each metric indicates:
+
+Precision (1.00): Out of all the predictions the model made for each class, 100% were correct. This means there were no false positives—every instance predicted as class 0 or class 1 was correctly classified.
+
+Recall (1.00): Out of all actual instances in each class, the model successfully predicted 100%. This implies that there were no false negatives—every true instance of each class was captured by the model.
+
+F1-Score (1.00): This is the harmonic mean of precision and recall, which balances both metrics. With both precision and recall being perfect, the F1-score also reaches 1.00, signifying perfect performance in both identifying and correctly classifying instances.
+
+Support: The support refers to the number of instances in each class. There are 36,300 instances for class 0 and 18,630 for class 1.
+
+Accuracy (1.00): The overall accuracy is 100%, meaning every instance in the dataset was classified correctly.
+
+Macro and Weighted Averages (1.00): Both the macro and weighted averages are also 1.00, showing that the model performs equally well on both classes, despite the difference in class distribution.
+
+
+
+## TensorFlow Model
+Using Sentiment Data
+![alt text](Sentiment_Tensor_model.png)
+#### Score:
+
+1717/1717 - 1s - loss: 9.4946e-09 - accuracy: 1.0000 - 701ms/epoch - 408us/step
+Loss: 9.494630859308018e-09, Accuracy: 1.0
+
+
+#### Interpretation: 
+The accuracy is 100%, meaning that every single prediction made by the model was correct on the training dataset.
+The data clearly indicates that the Republican candidate has a 100% likelihood of winning based on the prediction results.
 
 ## Demographic Analysis 
 
@@ -169,6 +199,7 @@ fig 2.
 ## Tensorflow Model
 fig 3.
 ![alt text](Presidential_Tensor_model.png)
+
 This model result and its corresponding visualizations show the training loss and accuracy over 10 epochs during the training of a neural network for binary classification. 
 
 1. Training Loss Plot:
