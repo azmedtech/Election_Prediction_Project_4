@@ -37,6 +37,8 @@ BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS I
 ![2022heat_map_race](https://github.com/user-attachments/assets/510cacc7-3aed-469e-82b6-f82558eaefad)
 Heat maps of the racial distribution with US states over the election years. 
 
+![median_age_change_2008_2022](https://github.com/user-attachments/assets/89743aa9-0d8d-4f4e-b8f3-08994668dcd2)
+Line graph showimg changes in median age in the US states over election years. 
 Insight: 
 
 Over the last few election years, the median age is consistently around 30-40 years old. There isn't much change in those values over time, but it seems to be steadily rising. Most of the age percentages taper at either end of the spectrum of ages. Based on the race data, the largest percentage identifies as "white." However, the percentages have slowly been changing to reflect the growing diversity in our country. Although, the change is not drastic, by any means, the percentage of people who identify as "white" has decreased gradually over the years. The next highest percentages were in those who identify as "african-american/black" or "hispanic/latino(any race). I didn't pull the further breakdown within the different races, because it would have made the dataset too large, so I opted to focus on the Percentages of the Total Race data. 
