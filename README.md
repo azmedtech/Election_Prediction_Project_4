@@ -31,7 +31,12 @@ Data Limitations: The datasets between 2016, 2020, and 2024 vary widely in the n
 
 ## Demographic Analysis 
 
-BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS IDENTIFIED DURING EXPLORATORY DATA ANALYSIS. INCLUDE IMAGES OR GRAPHS AS APPROPRIATE AND DESCIBE INSIGHTS UNIQUE TO THE EVALUATION OF ONLY YOUR DATASET (NOT YET COMBINED).
+In order to obtain the census demographic data for the United States for the election years, 2008, 2012, 2016, 2020 & 2024, I initially pulled a dataset from Kaggle with some basic demographics and the history of presidential winners over the last few elections. I then combined it with race demographic data found from another Kaggle dataset about the demgraphic patterns found in US police shootings. The main issue I had with this dataset, was that it lacked any data after 2020. 
+
+I then decided to use data from the offcial US Census website. They only had official data up until 2022. I created inidividual datasets for each election year available and made a yearly dataset for both age and race demo separately. Using the API library, I was able to pull only the specific data I needed. Then I exported them as csv files into Excel for some first initial format cleaning (fixing formatting errors and renaming columnsto match the other sets). 
+
+I worked in Jupyter Lab using Python to further clean and merge the datasets. From here I continued to merge my census data with the datasets my teammates made. Then made some ML models, Decision Tree and Random forest, using my Scikit-Learn and Pyspark. I initially attempted to Optimize the data leakage created when splitting train/test models, but had issues with losing data. I ended up using Ensemble Model with Gradient boost to get it from 96% to a 97% accuracy. 
+
 ![2008heat_map_race](https://github.com/user-attachments/assets/cadd418c-d1d1-4bcd-9a7d-49c0653e7c69)
 
 ![2022heat_map_race](https://github.com/user-attachments/assets/510cacc7-3aed-469e-82b6-f82558eaefad)
