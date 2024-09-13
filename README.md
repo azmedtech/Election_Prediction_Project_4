@@ -89,7 +89,10 @@ When extracting the data for the social media sentiment, individual demographics
     3. 2024 dataset (news_data_with_sentiment.csv): https://www.kaggle.com/datasets/sukanto/trump-vs-biden-sentiment-analysis/data
 
 * US Demographics
-    1. PROVIDE LINK
+    1. https://www.census.gov/data/developers/data-sets/acs-1year.2021.html#list-tab-843855098
+    2. https://www.census.gov/data/developers/data-sets/decennial-census.html
+    3. https://www.kaggle.com/datasets/kwullum/fatal-police-shootings-in-the-us?select=ShareRaceByCity.csv
+    4. https://www.kaggle.com/datasets/minhbtnguyen/us-census-for-election-predictions-20002020?      select=county_census_and_election_result.csv
 
 * US Economics
     1. PROVIDE LINK
