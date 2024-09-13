@@ -47,9 +47,14 @@ Data Limitations:
 
 The biggest issue I had with US Census Data is that it is only officially pulled every ten years. I pulled most of my demographic data from the American Community Survey (ACS). It is a yearly done survey that does a brief snapshot of the census demographics creating estimations essentially. The main limitations are that the years 2023 and 2024 are not fully completed and released. It takes time for them to organize and release them. Therefore, I didn't have true demographic data past 2022 to use. Essentially, I created my datasets by pulling specific variables from the US Census ACS APIs. And built tailored datasets to match the demographics I wanted to look at. 
 
-## Economic Analysis
+## Economic & Election Analysis
 
-BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS IDENTIFIED DURING EXPLORATORY DATA ANALYSIS. INCLUDE IMAGES OR GRAPHS AS APPROPRIATE AND DESCIBE INSIGHTS UNIQUE TO THE EVALUATION OF ONLY YOUR DATASET (NOT YET COMBINED).
+The datasets from Kaggle, the Census Bureau, and the Bureau of Economic Analysis were first loaded and preprocessed to ensure uniformity in their formats. During this stage, columns were standardized across all datasets, especially for state names, year formats, and numeric values like GDP and employment. Missing values were addressed either by filling them with averages or removing rows lacking crucial information. Once the data was cleaned, economic indicators such as GDP, personal income, and employment were merged with election results data, aligning them by state and year. Separate datasets covering racial demographics, age groups, and sentiment scores were also merged by state, year, and candidate.
+
+During the exploratory data analysis (EDA), a significant economic recovery was observed from 2008 to 2020, with GDP increasing steadily across most states following the 2008 financial crisis. Employment and personal income trends indicated that states with higher employment rates and rising personal incomes exhibited more voting stability, often supporting incumbents. In contrast, states with slower GDP growth or stagnant employment were more likely to shift political preferences, a trend particularly evident in the 2016 and 2020 elections.
+![Economic Indicators] ![economic_indicators_barplot_normalized](https://github.com/user-attachments/assets/66a18a16-05e2-474f-b099-6dc2aa801675)
+![Total Votes] ![election_total_votes_bar_chart](https://github.com/user-attachments/assets/3095a110-bec5-4950-973d-ce24d404b469)
+ 
 
 # Technical Overview:
 
