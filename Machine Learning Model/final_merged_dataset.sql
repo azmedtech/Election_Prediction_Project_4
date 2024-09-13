@@ -69,7 +69,12 @@ AND r."year" = a."Year"
 AND r."Candidate" = a."Candidate";
 
 -- Verify the merged_race_age_data table
-SELECT * FROM merged_race_age_data; 
+SELECT * FROM merged_race_age_data m
+
+-- JOIN Econ_Sent_Data e
+-- 	ON m."State" = e."State"
+-- 	AND m."Year" = e."Year"
+-- 	AND m."Candidate" = e."Candidate";
 
 -- Add new columns to the merged_race_age_data table
 ALTER TABLE merged_race_age_data
