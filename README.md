@@ -7,7 +7,7 @@ Jessica Bourbon, Syed Shahid, Stephanie Souza, and Elisabeth Trujillo
 
 Welcome to the Predicting the 2024 Presidential Election Outcome project! This ambitious endeavor combines a wealth of data sources to forecast one of the most significant political events of our time. By harnessing the power of historical demographics, economic indicators, and social media trends, we aim to develop a robust machine learning model that predicts the outcome of the 2024 U.S. presidential election. Our approach integrates data from the U.S. Census, the Bureau of Economic Analysis, and Twitter (X) to build a predictive model that captures the multifaceted nature of electoral dynamics.
 
-Our final presentation can be found at ![Average Sentiment By Party](https://github.com/azmedtech/Election_Prediction_Project_4/blob/main/Election_Prediction_Presentation.pptx) and our Tableau story can be found at [Election Tableau Story](https://public.tableau.com/views/PresidentialPrediction2024/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+Our final presentation can be found at [Average Sentiment By Party](https://github.com/azmedtech/Election_Prediction_Project_4/blob/main/Election_Prediction_Presentation.pptx) and our Tableau story can be found at [Election Tableau Story](https://public.tableau.com/views/PresidentialPrediction2024/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 # Project Overview
 
@@ -19,7 +19,7 @@ This project seeks to explore and analyze diverse datasets spanning from 2008 to
 
 ## Sentiment Analysis
 
-Three datasets were obtaiend from Kaggle.com (links below) and processed in Jupyter Notebooks using Python code. The datasets contained information about social media posts that had statements of a political nature. After cleaning and merging the data, the natual language took kit was used to generate sentiment scores for each post, broken into % neutral, % positive, and % negative (total sum = 1.0 per post). These scores were further evaluated to determine an overall average sentiment score by candidate, for each electio nyear data was avaialble (2016, 2020, and 2024). The goal of is to use this sentiment iformation, in additiona lto demographic and economic factors, to strengthen the predictive value of our machine learning model.  
+Three datasets were obtaiend from Kaggle.com (links below) and processed in Jupyter Notebooks using Python code. The datasets contained information about social media posts that had statements of a political nature. After cleaning and merging the data, the natual language took kit was used to generate sentiment scores for each post, broken into % neutral, % positive, and % negative (total sum = 1.0 per post). These scores were further evaluated to determine an overall average sentiment score by candidate, for each election year data was available (2016, 2020, and 2024). The goal of is to use this sentiment information, in addition to demographic and economic factors, to strengthen the predictive value of our machine learning model.  
 
 ![Average Sentiment By Party](<Visualizations/all_years_avg_sent_by_cand.png>)
  Insights: The average sentiment expressed in the social media posts analyzed was not significantly different between political parties for any of the election cycles evaluated during this project. Of interest, there appears to be a significant downward shift in the sentiment expressed by each author for their respective candidate during the 2020 election, in which both parties were viewed substantially less favorably than in the previous election cycle, with the Republican candidate viewed negatively overall. For reference, the sentiment scale ranges from -1.0 (completely negative) to 1.0 (completely positive). 
@@ -28,36 +28,6 @@ Three datasets were obtaiend from Kaggle.com (links below) and processed in Jupy
 Insights: Overall, across all years, the majority of authors posting on social media conveyed neutral sentiments about the presidential candidates. When comparing the positive and negative sentiments, the 2016 and 2024 data show positive sentiments around double the negative sentiments for the author's respective candidate, while the 2020 data shows the positive and negative sentiments to be nearly equal, explaining the average scores much closer to zero than in 2016 or 2024. 
 
 Data Limitations: The datasets between 2016, 2020, and 2024 vary widely in the number of entries, which may have a bias effect on the data interpretations. Additionally, in 2023, the owner of Twitter (now X) changed the API access for the app, which lead to a shift away from the use of the API as a data source. This may also affect the quantity and type of available data for analysis.
-## Logistic Regression Model
-![alt text](Sentiment_confusion_matrix.png) ![alt text](Sentiment_classification_report.png)
-The classification report shows outstanding performance, with perfect precision, recall, and F1-scores of 1.00 for both classes (0 and 1). Here's what each metric indicates:
-
-Precision (1.00): Out of all the predictions the model made for each class, 100% were correct. This means there were no false positives—every instance predicted as class 0 or class 1 was correctly classified.
-
-Recall (1.00): Out of all actual instances in each class, the model successfully predicted 100%. This implies that there were no false negatives—every true instance of each class was captured by the model.
-
-F1-Score (1.00): This is the harmonic mean of precision and recall, which balances both metrics. With both precision and recall being perfect, the F1-score also reaches 1.00, signifying perfect performance in both identifying and correctly classifying instances.
-
-Support: The support refers to the number of instances in each class. There are 36,300 instances for class 0 and 18,630 for class 1.
-
-Accuracy (1.00): The overall accuracy is 100%, meaning every instance in the dataset was classified correctly.
-
-Macro and Weighted Averages (1.00): Both the macro and weighted averages are also 1.00, showing that the model performs equally well on both classes, despite the difference in class distribution.
-
-
-
-## TensorFlow Model
-Using Sentiment Data
-![alt text](Sentiment_Tensor_model.png)
-#### Score:
-
-1717/1717 - 1s - loss: 9.4946e-09 - accuracy: 1.0000 - 701ms/epoch - 408us/step
-Loss: 9.494630859308018e-09, Accuracy: 1.0
-
-
-#### Interpretation: 
-The accuracy is 100%, meaning that every single prediction made by the model was correct on the training dataset.
-The data clearly indicates that the Republican candidate has a 100% likelihood of winning based on the prediction results.
 
 ## Demographic Analysis 
 
@@ -88,17 +58,6 @@ Insights:  Analysis on states with higher GDP tend to vote in elections. We can 
 
 ## Tableau Visuals link 
 https://rb.gy/uh9ie7
-### Data Limitations: ENTER FINDINGS HERE
-=======
-## Economic & Election Analysis
-
-The datasets from Kaggle, the Census Bureau, and the Bureau of Economic Analysis were first loaded and preprocessed to ensure uniformity in their formats. During this stage, columns were standardized across all datasets, especially for state names, year formats, and numeric values like GDP and employment. Missing values were addressed either by filling them with averages or removing rows lacking crucial information. Once the data was cleaned, economic indicators such as GDP, personal income, and employment were merged with election results data, aligning them by state and year. Separate datasets covering racial demographics, age groups, and sentiment scores were also merged by state, year, and candidate.
-
-During the exploratory data analysis (EDA), a significant economic recovery was observed from 2008 to 2020, with GDP increasing steadily across most states following the 2008 financial crisis. Employment and personal income trends indicated that states with higher employment rates and rising personal incomes exhibited more voting stability, often supporting incumbents. In contrast, states with slower GDP growth or stagnant employment were more likely to shift political preferences, a trend particularly evident in the 2016 and 2020 elections.
-![Economic Indicators] ![economic_indicators_barplot_normalized](https://github.com/user-attachments/assets/66a18a16-05e2-474f-b099-6dc2aa801675)
-![Total Votes] ![election_total_votes_bar_chart](https://github.com/user-attachments/assets/3095a110-bec5-4950-973d-ce24d404b469)
- 
->>>>>>> 9aa8b2d647c53f08dd57f6079030629e8688450d
 
 # Technical Overview:
 
@@ -130,10 +89,27 @@ To use this project to predict the winning candidate locally, follow these steps
 
     **Demographic Analysis**: From Census Data folder, run census_age2022.ipynb, then census_age2008_2020.ipynb to get the merged age csv file. For race demo in the same folder run, census_race2008_2020.ipynb then run census_race2022.ipynb to get merged csv. In the CensusVisuals run, Age_visual.ipynb and demo_visuals.ipynb to get visuals on data analysis. In the main Machine Learning Model folder run combining_csvfinal-Copy1.ipynb for the Decision Tree and Random Forest models and optimization. 
 
-    **Economic Analysis**: ENTER INSTRUCTIONS HERE.
+    **Economic Analysis**: From the Economic Indicators folder, pull in Economic_Election.csv and run the visual.py file. To run the machine model, utilize the elec_eco_race_df_cleaned.csv.zip file in the CSV_Outputs folder.
 
-    **Machine Learing Models**:
-### Using Logistic Regression Model to Predict the Presidential Election 
+# Machine Learing Models
+## 1. Logistic Regression Models
+### 1st Model:
+![alt text](Sentiment_confusion_matrix.png) ![alt text](Sentiment_classification_report.png)
+The classification report shows outstanding performance, with perfect precision, recall, and F1-scores of 1.00 for both classes (0 and 1). Here's what each metric indicates:
+
+Precision (1.00): Out of all the predictions the model made for each class, 100% were correct. This means there were no false positives—every instance predicted as class 0 or class 1 was correctly classified.
+
+Recall (1.00): Out of all actual instances in each class, the model successfully predicted 100%. This implies that there were no false negatives—every true instance of each class was captured by the model.
+
+F1-Score (1.00): This is the harmonic mean of precision and recall, which balances both metrics. With both precision and recall being perfect, the F1-score also reaches 1.00, signifying perfect performance in both identifying and correctly classifying instances.
+
+Support: The support refers to the number of instances in each class. There are 36,300 instances for class 0 and 18,630 for class 1.
+
+Accuracy (1.00): The overall accuracy is 100%, meaning every instance in the dataset was classified correctly.
+
+Macro and Weighted Averages (1.00): Both the macro and weighted averages are also 1.00, showing that the model performs equally well on both classes, despite the difference in class distribution.
+
+### 2nd Model:
 This model is a detailed performance summary of a binary classification model, showing key metrics like precision, recall, and F1-score for each class (e.g., Democrat and Republican) along with overall metrics like accuracy, macro average, and weighted average. 
 
 fig 1.
@@ -196,7 +172,16 @@ Model Bias: The model seems heavily biased towards predicting the "Republican" c
 fig 2.
 ![alt text](confusion_matrix.png)
 
-## Tensorflow Model
+## 2. Tensorflow Models
+### 1st Model:
+Using Sentiment Data
+![alt text](Sentiment_Tensor_model.png)
+#### Score:
+
+1717/1717 - 1s - loss: 9.4946e-09 - accuracy: 1.0000 - 701ms/epoch - 408us/step
+Loss: 9.494630859308018e-09, Accuracy: 1.0
+
+### 2nd Model:
 fig 3.
 ![alt text](Presidential_Tensor_model.png)
 
@@ -208,9 +193,7 @@ Y-axis: Represents the loss value, specifically the binary cross-entropy loss.
 Loss measures how well the model's predictions match the actual labels, with lower values indicating better performance.
 X-axis: Represents the number of epochs, where each epoch is a complete pass through the training dataset.
 
-
 Observations:
-
 
 As the epochs progress, the training loss decreases, indicating that the model is improving its predictions as it learns from the data.
 
@@ -218,22 +201,19 @@ This steady decline in loss suggests that the model is effectively optimizing it
 
 The absence of large fluctuations implies the model training is stable, without sudden overfitting or underfitting trends.
 
-
 2. Training Accuracy Plot:
-
 
 Y-axis: Represents the accuracy metric, which shows the percentage of correct predictions made by the model on the training data. X-axis: Represents the number of epochs.
 
-
 Observations:
-
 
 The training accuracy improves over time, suggesting that the model becomes increasingly capable of making correct predictions.
 As epochs continue, the accuracy approaches 1.0 (or 100%), indicating that the model eventually fits the training data very well.
 This increase in accuracy over epochs shows the model's learning progress.
 
-
-5. **Access the visualizations**: INDICATE FILES USED TO GENERATE VISUALS.
+### Interpretation: 
+The accuracy is 100%, meaning that every single prediction made by the model was correct on the training dataset.
+The data clearly indicates that the Republican candidate has a 100% likelihood of winning based on the prediction results.
 
 # Ethical Considerations
 
@@ -253,7 +233,7 @@ When extracting the data for the social media sentiment, individual demographics
     4. https://www.kaggle.com/datasets/minhbtnguyen/us-census-for-election-predictions-20002020?      select=county_census_and_election_result.csv
 
 * US Economics
-    1. PROVIDE LINK
+    1. https://www.bea.gov/data
 
 
 ## Team Gitlab
