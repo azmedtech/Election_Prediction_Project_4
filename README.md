@@ -31,7 +31,6 @@ Data Limitations: The datasets between 2016, 2020, and 2024 vary widely in the n
 
 ## Demographic Analysis 
 
-BRIEFLY DESCRIBE YOUR DATA PROCESSING AND PREPARATION, AS WELL AS ANY FINDINGS IDENTIFIED DURING EXPLORATORY DATA ANALYSIS. INCLUDE IMAGES OR GRAPHS AS APPROPRIATE AND DESCIBE INSIGHTS UNIQUE TO THE EVALUATION OF ONLY YOUR DATASET (NOT YET COMBINED).
 ![2008heat_map_race](https://github.com/user-attachments/assets/cadd418c-d1d1-4bcd-9a7d-49c0653e7c69)
 
 ![2022heat_map_race](https://github.com/user-attachments/assets/510cacc7-3aed-469e-82b6-f82558eaefad)
@@ -94,7 +93,9 @@ To use this project to predict the winning candidate locally, follow these steps
 # Machine Learing Models
 ## 1. Logistic Regression Models
 ### 1st Model:
-![alt text](Sentiment_confusion_matrix.png) ![alt text](Sentiment_classification_report.png)
+![Sentiment Confusion Matrix](<Visualizations/Sentiment_confusion_matrix.png>) 
+![Sentiment Classification Report](<Visualizations/Sentiment_classification_report.png>)
+
 The classification report shows outstanding performance, with perfect precision, recall, and F1-scores of 1.00 for both classes (0 and 1). Here's what each metric indicates:
 
 Precision (1.00): Out of all the predictions the model made for each class, 100% were correct. This means there were no false positives—every instance predicted as class 0 or class 1 was correctly classified.
@@ -113,7 +114,8 @@ Macro and Weighted Averages (1.00): Both the macro and weighted averages are als
 This model is a detailed performance summary of a binary classification model, showing key metrics like precision, recall, and F1-score for each class (e.g., Democrat and Republican) along with overall metrics like accuracy, macro average, and weighted average. 
 
 fig 1.
-![alt text](classification_report_heatmap.png)
+![Classification Report Heatmap](<Visualizations/classification_report_heatmap.png>)
+
 Metrics: 
 
 Precision:
@@ -170,12 +172,12 @@ The weighted average reflects the class imbalance and shows that the model's ove
 Model Bias: The model seems heavily biased towards predicting the "Republican" class. This is evident from the extremely high recall (0.99) for class 1 (Republican) and very low recall (0.04) for class 0 (Democrat). It suggests that the model almost always predicts "Republican" when unsure.
 
 fig 2.
-![alt text](confusion_matrix.png)
+![COnfusion Matrix](<Visualizations/confusion_matrix.png>)
 
 ## 2. Tensorflow Models
 ### 1st Model:
 Using Sentiment Data
-![alt text](Sentiment_Tensor_model.png)
+![Sentiment Tensor Model](<Visualizations/Sentiment_Tensor_model.png>)
 #### Score:
 
 1717/1717 - 1s - loss: 9.4946e-09 - accuracy: 1.0000 - 701ms/epoch - 408us/step
@@ -183,7 +185,7 @@ Loss: 9.494630859308018e-09, Accuracy: 1.0
 
 ### 2nd Model:
 fig 3.
-![alt text](Presidential_Tensor_model.png)
+![Presidential Tensor Model](<Visualizations/Presidential_Tensor_model.png>)
 
 This model result and its corresponding visualizations show the training loss and accuracy over 10 epochs during the training of a neural network for binary classification. 
 
