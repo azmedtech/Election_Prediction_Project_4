@@ -1,5 +1,5 @@
 # Predicting the 2024 Presidential Election Outcome 
-Jessica Bourbon, Syed Shahid, Stephanie Souza, and Elisabeth Trujillo
+Jessica Borbon, Syed Shahid, Stephanie Souza, and Elisabeth Trujillo
 
 ![Election Blurb](<Visualizations/wordcloud.png>)
 
