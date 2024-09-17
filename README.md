@@ -91,7 +91,7 @@ To use this project to predict the winning candidate locally, follow these steps
 
     **Economic Analysis**: From the Economic Indicators folder, pull in Economic_Election.csv and run the visual.py file. To run the machine model, utilize the elec_eco_race_df_cleaned.csv.zip file in the CSV_Outputs folder.
 
-# Machine Learing Models
+# Machine Learning Models
 ## 1. Logistic Regression Models
 ### 1st Model:
 ![Sentiment Confusion Matrix](<Visualizations/Sentiment_confusion_matrix.png>) 
